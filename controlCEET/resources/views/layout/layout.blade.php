@@ -7,17 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('libs/materialize/css/materialize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/app.js') }}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>ControlCEET</title>
 </head>
-<body >
+<body style="background-image: url({{ asset('img/fongo01.png')}}); background-size: cover">
 
 @include('All.navbar')
 
+
 <!-- Vistas del Home -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 @yield('home')
+@yield('colombia')
+@yield('restrepo')
+@yield('ricaurte')
+@yield('alamos')
+@yield('carrera')
+@yield('registrar')
 
 
+@include('All.footer')
 
 <script
         src="https://code.jquery.com/jquery-3.4.1.js"

@@ -2,30 +2,17 @@
 
 
 @section('home')
-    <div class="Home" style="background-image: url('IMG/fondoHome2.jpg');">
-        <div class="" style="padding: 50px">
-            <div class="row">
-                <div class="col s1"></div>
-                <div class="col s10">
-                    <center><div class="FontTitulo3" >
-                            Bienvenid@ a Synergias Magister una plataforma dedicada al mejoramiento de la calidad educativa en Colombia.
-                        </div></center>
-                </div>
-                <div class="col s1"></div>
-            </div>
+    <div class="container">
+        <div class="row">
             <br>
-            <br>
-            <div class="row">
-                <center><div class="FontParrafo1white" >
-                        Generamos distinción y reconocimiento a los proyectos y actividades que desas realizar. Contamos con el apoyo
-                        de cientos de maestros y de redes investigativas para brindarte la mejor experiencia de servicio.
-                    </div></center>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="ButtonHome">
-                    <a class="buttonsHome" href="{{ route('Home') }}">Iniciar Sesion</a>
-                </div>
+            <p class="h1">Registro de Asistencia CEET</p>
+            <p class="h2">Seleccione la sede a consultar: </p>
+            <div class="carousel">
+                <a class="carousel-item" href="{{route('colombia')}}">Sede Colombia<img src="img/home02.png"></a>
+                <a class="carousel-item" href="{{route('restrepo')}}">Sede Restrepo<img src="img/home03.png"></a>
+                <a class="carousel-item" href="{{route('ricaurte')}}">Sede Ricaurte<img src="img/home04.png"></a>
+                <a class="carousel-item" href="{{route('alamos')}}">Sede Alamos<img src="img/home05.png"></a>
+                <a class="carousel-item" href="{{route('carrera')}}">Sede Carrera 30<img src="img/home06.jpg"></a>
             </div>
         </div>
     </div>
